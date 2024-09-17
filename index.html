@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/logo.png" alt="company logo k">
+            </a>
+            <div class="nav-link">
+                <ul class="flex">
+                    <li class="hover-link nav-link list-items" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-link list-items" id="finance" onclick="onNavItemClick('finance')">finance</li>
+                    <li class="hover-link nav-link list-items" id="politics" onclick="onNavItemClick('politics')">politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g science">
+                <button id="search-button" class="search-button">search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="card-container container flex" id="cards-container"> 
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https:via.placeholder.com/400x200" alt="">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this is title</h3>
+                <h6 class="news-source" id="news-source">End gadget26/08/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quasi earum perspiciatis debitis consequuntur error temporibus laboriosam dolorem! Accusamus, inventore!</p>
+            </div>
+        </div> 
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
